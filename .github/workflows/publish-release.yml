@@ -27,7 +27,7 @@ jobs:
       run: ./gradlew detektAll ktlintCheck lintRelease
 
     - name: Publish to Sonatype
-      run: ./gradlew publishAllPublicationsToMavenCentralRepository closeAndReleaseRepository
+      run: ./gradlew publishAllPublicationsToMavenCentralRepository
       env:
         ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.OSSRH_USERNAME }}
         ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.OSSRH_PASSWORD }}
