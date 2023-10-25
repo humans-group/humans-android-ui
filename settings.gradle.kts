@@ -16,3 +16,4 @@ rootProject.name = "humans-android-ui"
 includeBuild("build-logic")
 
 include(":wrappers")
+include(":sample")

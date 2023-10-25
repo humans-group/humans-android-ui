@@ -2,13 +2,13 @@
 # kotlin
 kotlinVersion = "1.8.10"
 # kotlinx
-coroutinesVersion = "1.6.4"
+coroutinesVersion = "1.7.1"
 
 # android
-androidGradlePluginVersion = "7.4.0"
+androidGradlePluginVersion = "7.4.2"
 
 androidAppCompatVersion = "1.6.1"
-androidXCoreVersion = "1.9.0"
+androidXCoreVersion = "1.12.0"
 
 [libraries]
 #===========MULTIPLATFORM===========#
@@ -19,6 +19,8 @@ mpp-kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-co
 #androidX
 android-x-appCompat = { module = "androidx.appcompat:appcompat", version.ref = "androidAppCompatVersion" }
 android-x-core = { module = "androidx.core:core-ktx", version.ref = "androidXCoreVersion" }
+android-x-activity-ktx = 'androidx.activity:activity-ktx:1.8.0'
+android-x-lifecycle-viewmodel-ktx = 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
 
 #===========GRADLE PLUGINS ARTIFACTS===========#
 plugin-kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
