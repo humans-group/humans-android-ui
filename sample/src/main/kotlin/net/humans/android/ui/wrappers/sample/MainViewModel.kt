@@ -31,16 +31,4 @@ internal class MainViewModel(
     private fun updateState() {
         _viewState.value = factory.create(clickCount)
     }
-
-    companion object {
-        val Factory: ViewModelProvider.Factory = object : ViewModelProvider.Factory {
-            @Suppress("UNCHECKED_CAST")
-            override fun <T : ViewModel> create(
-                modelClass: Class<T>,
-                extras: CreationExtras
-            ): T {
-                return MainViewModel() as T
-            }
-        }
-    }
 }

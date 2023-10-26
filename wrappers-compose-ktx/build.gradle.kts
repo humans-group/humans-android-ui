@@ -1,21 +1,21 @@
 plugins {
-    id("android-app-convention")
+    id("android-library-convention")
     id("kotlin-parcelize")
+    id("publish-library-convention")
 }
 
 android {
-    namespace = "net.humans.android.ui.wrappers.sample"
-    viewBinding.enable = true
+    namespace = "net.humans.android.ui.wrappers.compose"
+    buildFeatures.compose = true
+    composeOptions.kotlinCompilerExtensionVersion = "1.5.1"
+    packagingOptions.resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
 }
 
 dependencies {
     implementation(libs.android.x.appCompat)
     implementation(libs.android.x.core)
-    implementation(libs.android.x.activity.ktx)
-    implementation(libs.android.x.lifecycle.viewmodel.ktx)
-
     implementation(projects.wrappers)
-    implementation(projects.wrappersComposeKtx)
+
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
