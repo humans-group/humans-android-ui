@@ -14,8 +14,8 @@ dependencies {
     implementation(libs.android.x.activity.ktx)
     implementation(libs.android.x.lifecycle.viewmodel.ktx)
 
-    implementation(projects.wrappers)
-    implementation(projects.wrappersComposeKtx)
+    implementation(project(":wrappers"))
+    implementation(project(":wrappers-compose-ktx"))
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
