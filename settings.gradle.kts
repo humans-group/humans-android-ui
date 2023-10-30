@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-enableFeaturePreview("VERSION_CATALOGS")
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-
 dependencyResolutionManagement {
     repositories {
         google()
@@ -16,3 +13,5 @@ rootProject.name = "humans-android-ui"
 includeBuild("build-logic")
 
 include(":wrappers")
+include(":wrappers-compose-ktx")
+include(":sample")

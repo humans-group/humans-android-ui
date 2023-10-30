@@ -15,6 +15,7 @@ buildscript {
 
 plugins {
     id("configuration-detekt-convention")
+    alias(libs.plugins.kotlinAndroid) apply false
 }
 
 subprojects {

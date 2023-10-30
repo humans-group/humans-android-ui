@@ -9,8 +9,8 @@ plugins {
 }
 
 dependencies {
-    val kotlinVersion = "1.8.10"
-    val agpVersion = "7.4.0"
+    val kotlinVersion = "1.9.10"
+    val agpVersion = "7.4.2"
     val detektVersion = "1.21.0"
     val ktlintVersion = "11.0.0"
     val publishPluginVersion = "0.24.0"
