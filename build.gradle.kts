@@ -20,14 +20,14 @@ plugins {
 subprojects {
     apply(plugin = "configuration-ktlint-convention")
 
+    group = "net.humans.android.ui"
+    version = "2024.10.13"
+
     repositories {
         google()
         mavenCentral()
         mavenLocal()
     }
-
-    group = "net.humans.android.ui"
-    version = "2023.02.17"
 
     setupJavaTarget(this)
 }
