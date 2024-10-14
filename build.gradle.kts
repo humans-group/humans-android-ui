@@ -21,7 +21,7 @@ subprojects {
     apply(plugin = "configuration-ktlint-convention")
 
     group = "net.humans.android.ui"
-    version = "2024.10.13"
+    version = "2024.10.14"
 
     repositories {
         google()
