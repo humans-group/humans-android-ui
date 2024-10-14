@@ -1,24 +1,33 @@
 [versions]
 # kotlin
 kotlinVersion = "1.8.10"
+
 # kotlinx
 coroutinesVersion = "1.6.4"
+
+# multiplatform libs
+koinVersion = "3.4.3"
 
 # android
 androidGradlePluginVersion = "7.4.0"
 
 androidAppCompatVersion = "1.6.1"
 androidXCoreVersion = "1.9.0"
+recyclerViewVersion = "1.2.1"
+viewBindingVersion = "7.1.2"
 
 [libraries]
 #===========MULTIPLATFORM===========#
 # kotlinx
 mpp-kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion" }
+mpp-koin = { module = "io.insert-koin:koin-core", version.ref = "koinVersion" }
 
 #===========ANDROID===========#
 #androidX
 android-x-appCompat = { module = "androidx.appcompat:appcompat", version.ref = "androidAppCompatVersion" }
 android-x-core = { module = "androidx.core:core-ktx", version.ref = "androidXCoreVersion" }
+android-x-recyclerView = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerViewVersion" }
+android-x-viewBinding = { module = "androidx.databinding:viewbinding", version.ref = "viewBindingVersion" }
 
 #===========GRADLE PLUGINS ARTIFACTS===========#
 plugin-kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }

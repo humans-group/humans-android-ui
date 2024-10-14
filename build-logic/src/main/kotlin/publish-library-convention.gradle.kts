@@ -17,7 +17,7 @@ mavenPublishing {
     publishToMavenCentral(SonatypeHost.S01)
 
     coordinates(
-        groupId = project.group.toString(),
+        groupId = group.toString(),
         artifactId = project.name,
         version = project.version.toString()
     )

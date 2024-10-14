@@ -16,3 +16,5 @@ rootProject.name = "humans-android-ui"
 includeBuild("build-logic")
 
 include(":wrappers")
+include(":recycler-on-steroids:core")
+include(":recycler-on-steroids:di-extensions:koin")
