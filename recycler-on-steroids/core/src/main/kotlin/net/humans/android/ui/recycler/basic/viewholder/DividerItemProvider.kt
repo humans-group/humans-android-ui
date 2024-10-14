@@ -3,7 +3,6 @@ package net.humans.android.ui.recycler.basic.viewholder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RestrictTo
 import androidx.recyclerview.widget.RecyclerView
 import net.humans.android.ui.recycler.basic.applyContentMargins
 import net.humans.android.ui.recycler.basic.model.Divider
@@ -11,7 +10,6 @@ import net.humans.android.ui.recycler.steroid.ListItemProvider
 import net.humans.android.ui.recycler.steroid.SteroidAdapter
 import net.humans.android.ui.wrappers.setBackgroundColor
 
-@RestrictTo(RestrictTo.Scope.LIBRARY_GROUP)
 class DividerItemProvider(
     private val impl: Impl
 ) : ListItemProvider<Divider, SteroidAdapter.ViewHolder>() {

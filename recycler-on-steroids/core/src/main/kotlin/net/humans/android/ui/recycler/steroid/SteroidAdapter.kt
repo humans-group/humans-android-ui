@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 /**
  * [RecyclerView]'s Adapter to handle multiply type of view without creating new adapter
  */
+@Suppress("LongParameterList", "TooManyFunctions")
 class SteroidAdapter<T : Any> internal constructor(
     private val layoutInflater: LayoutInflater,
     itemProviders: Map<Any, ListItemProvider<T, *>>,
@@ -40,8 +41,6 @@ class SteroidAdapter<T : Any> internal constructor(
      */
     private val itemViewTypeToKeys: List<Any>
     private val handler = Handler(Looper.getMainLooper())
-
-    //private val currentList: List<T> get() = super.getCurrentList()
 
     init {
         val itemViewTypeToProviders = ArrayList<ListItemProvider<T, *>>(itemProviders.size)
@@ -129,7 +128,8 @@ class SteroidAdapter<T : Any> internal constructor(
             provider.bindViewHolder(
                 holder,
                 currentList[position],
-                payloads.takeUnless { it.isEmpty() })
+                payloads.takeUnless { it.isEmpty() }
+            )
             notifyInterceptors { it.onViewHolderBounded(provider, holder) }
         }
     }
